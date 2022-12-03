@@ -33,6 +33,9 @@ body {
   
 }
 
+
+
+
 #preloader {
   overflow: hidden;
   background: #2744e6;
@@ -75,6 +78,33 @@ body {
 #preloader .jumper > div:nth-child(2) {
   -webkit-animation-delay: 0.33333s;
   animation-delay: 0.33333s;
+}
+
+  
+.whatsapp.ajd {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.whatsapp.ajd img {
+  position: relative;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp.smb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.65);
+  border-radius: 50%;
 }
 
 #preloader .jumper > div:nth-child(3) {
@@ -126,7 +156,7 @@ body {
   text-align: center;
   background-color: #f7f7f7;
   padding: 18px 10px 25px 10px;
-  margin: 15px 0px;
+  margin: 35px 0px;
   border-radius: 7px;
   min-width: 250px;
   border: 2px solid #dbdbdb;
@@ -172,12 +202,19 @@ body {
   flex-wrap: wrap;
 }
 
+.section-main{
+  padding-top: 100px;
+}
+
 .main-title{
-  padding-top: 10px;
-  font-weight: 700;
-  color: #2744e6;
-  letter-spacing: -1px;
-  font-size: 32px;
+      padding-top: 40px;
+      font-weight: 700;
+      color: #2744e6;
+      letter-spacing: -1px;
+      font-size: 27px;
+      text-align: center;
+      margin: 0px 200px;
+
 }
 
 .main-p{
@@ -186,10 +223,46 @@ body {
   color: #727272;
 }
 
+.title-valor{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.valor{
+  text-align: center;
+  font-weight: 900;
+  color: #2744e6;
+  font-size: 52px;
+  margin-top: 0;
+  animation: go-back 1.5s infinite alternate;
+}
+
+
+@media only screen and (max-width: 999px) {
+	.main-title{
+		margin: 0px;
+    padding-top:  0px;
+    font-size: 22px;
+	  }
+    .title-valor{
+      font-size: 15px;
+    }
+    .section-main{
+      padding-top: 40px;
+    }
+    .valor{
+      font-size: 48px;
+    }
+    
+  }
+
+
 .h5-features{
   margin: 9px;
   letter-spacing: -1px;
-  font-size: 27px;
+  font-size: 34px;
   font-weight: 900;
   color: #404040;
   margin-bottom: 15px;
@@ -286,7 +359,7 @@ input {
   border-width: 2px;
   font-size: 2.2rem;
   padding: 0.5em 1.5em 0.5em 1.5em;
-  margin: 18px 0px 35px 0px;
+  margin: 18px 0px 10px 0px;
 }
 
 .form__input:valid {
@@ -304,3 +377,29 @@ input {
     max-width: 290px;
   }
   }
+
+.section-valor{
+  background-color: rgb(247, 247, 247);
+  padding: 18px 0px;
+  border: 2px solid #dbdbdb;
+}
+
+.title-main{
+  font-size: 32px;
+  font-weight: 100;
+  color: #323232;
+}
+
+
+
+@keyframes go-back {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
