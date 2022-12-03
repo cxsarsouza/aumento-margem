@@ -107,6 +107,7 @@ body {
   border-radius: 50%;
 }
 
+
 #preloader .jumper > div:nth-child(3) {
   -webkit-animation-delay: 0.66666s;
   animation-delay: 0.66666s;
@@ -374,7 +375,8 @@ input {
 
 @media only screen and (max-width: 380px) {
 	.form__input {
-    max-width: 290px;
+    max-width: 250px;
+    padding: 0.2em 0.9em 0.2em 0.9em;
   }
   }
 
@@ -390,6 +392,11 @@ input {
   color: #323232;
 }
 
+.p-nome{
+  max-width: 400px;
+  margin-bottom: 35px;
+  color: #a3a3a3;
+}
 
 
 @keyframes go-back {
